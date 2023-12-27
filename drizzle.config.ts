@@ -6,11 +6,13 @@ if (!process.env.DATABASE_URL) {
   console.log("DATABASE_URL must be set");
 }
 
-export default {
+const drizzleConfig: Config = {
   schema: "./src/lib/supabase/schema.ts",
   out: "./migrations",
   driver: "pg",
   dbCredentials: {
     connectionString: process.env.DATABASE_URL || "",
   },
-} satisfies Config;
+};
+
+export default drizzleConfig;
