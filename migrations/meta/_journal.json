@@ -8,6 +8,20 @@
       "when": 1703699824769,
       "tag": "0000_worried_catseye",
       "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "5",
+      "when": 1703759606369,
+      "tag": "0001_cool_lethal_legion",
+      "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "5",
+      "when": 1703760922777,
+      "tag": "0002_familiar_scorpion",
+      "breakpoints": true
     }
   ]
 }

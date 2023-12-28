@@ -9,7 +9,7 @@ dotenv.config({ path: ".env" });
 if (!process.env.DATABASE_URL) {
   console.error("No database URL provided");
 }
-console.log("env ",process?.env?.DATABASE_URL);
+// console.log("env ",process?.env?.DATABASE_URL);
 
 const client = postgres(process?.env?.DATABASE_URL as string, { max: 1 });
 const db = drizzle(client, { schema }); // this allows us to query our database
